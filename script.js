@@ -10,50 +10,97 @@ const cell9 = document.querySelector(".cell9");
 
 // const player1 = document.querySelector("");
 
+const cells = document.querySelectorAll(".container");
+for (const el of cells) {
+  const cell = el.querySelector(".cell");
+  console.log(cell);
+  cell.addEventListener("click", function () {});
+}
+
+let playerX = true;
+
 const x = function (cell) {
   const letterX = document.createElement("h1");
   letterX.innerHTML = "X";
   cell.appendChild(letterX);
+  playerX = false;
 };
 const o = function (cell) {
   const letterO = document.createElement("h1");
   letterO.innerHTML = "O";
   cell.appendChild(letterO);
+  playerX = true;
 };
 
-cell1.addEventListener("click", () => {
-  x(cell1);
-  o(cell1);
+const playing = function () {
+  if (playerX) {
+    x(cell1);
+  } else {
+    o(cell1);
+  }
+};
+
+cell1.addEventListener("click", (e) => {
+  if (playerX) {
+    x(cell1);
+  } else {
+    o(cell1);
+  }
+  cell1.disabled = true;
 });
 cell2.addEventListener("click", () => {
-  x(cell2);
-  o(cell2);
+  if (playerX) {
+    x(cell2);
+  } else {
+    o(cell2);
+  }
 });
 cell3.addEventListener("click", () => {
-  x(cell3);
-  o(cell3);
+  if (playerX) {
+    x(cell3);
+  } else {
+    o(cell3);
+  }
 });
 cell4.addEventListener("click", () => {
-  o(cell4);
-  x(cell4);
+  if (playerX) {
+    x(cell4);
+  } else {
+    o(cell4);
+  }
 });
 cell5.addEventListener("click", () => {
-  o(cell5);
-  x(cell5);
+  if (playerX) {
+    x(cell5);
+  } else {
+    o(cell5);
+  }
 });
 cell6.addEventListener("click", () => {
-  o(cell6);
-  x(cell6);
+  if (playerX) {
+    x(cell6);
+  } else {
+    o(cell6);
+  }
 });
 cell7.addEventListener("click", () => {
-  o(cell7);
-  x(cell7);
+  if (playerX) {
+    x(cell7);
+  } else {
+    o(cell7);
+  }
 });
 cell8.addEventListener("click", () => {
-  o(cell8);
-  x(cell8);
+  if (playerX) {
+    x(cell8);
+  } else {
+    o(cell8);
+  }
 });
 cell9.addEventListener("click", () => {
-  o(cell9);
-  x(cell9);
+  if (playerX) {
+    x(cell9);
+  } else {
+    o(cell9);
+  }
 });
