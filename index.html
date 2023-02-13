@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 1rem;
+      }
+      #container > div {
+        border: solid 1px black;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="cell1"></div>
+      <div class="cell2"></div>
+      <div class="cell3"></div>
+      <div class="cell4"></div>
+      <div class="cell5"></div>
+      <div class="cell6"></div>
+      <div class="cell7"></div>
+      <div class="cell8"></div>
+      <div class="cell9"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
